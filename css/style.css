@@ -141,6 +141,17 @@ section {
   flex-direction: column;
 }
 
+button {
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  font-size: inherit;
+}
+.d-block {
+  display: block;
+}
+
 /* utility classes end*/
 
 /* Header */
@@ -325,3 +336,28 @@ section {
   border-radius: 20px;
 }
 /* Ecperience End */
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  gap: 70px;
+  margin-top: 75px;
+  background-color: var(--darker-gray);
+}
+.banner .left {
+  margin-left: 15%;
+}
+.banner-call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* Banner Section End */

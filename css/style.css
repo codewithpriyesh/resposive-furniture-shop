@@ -16,7 +16,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 /* default styles */
@@ -24,6 +24,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -105,6 +108,11 @@ button:active:disabled {
   line-height: 150%;
   font-weight: 700;
 }
+.main-heading-2 {
+  font-size: 45px;
+  line-height: 150%;
+  font-weight: 700;
+}
 
 .sub-heading {
   font-size: 18px;
@@ -116,6 +124,16 @@ button:active:disabled {
 section {
   padding-top: 75px !important;
   padding-bottom: 75px !important;
+}
+
+.left {
+  flex: 1;
+}
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* utility classes end*/
@@ -187,17 +205,9 @@ section {
   display: flex;
   padding: 0 20px;
   align-items: center;
-  gap: 80px;
+  gap: 70px;
 }
-.hero-left {
-  flex: 1;
-}
-.hero-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+
 .hero-image img {
   width: 400px;
   height: 450px;
@@ -225,3 +235,61 @@ section {
   color: black;
 }
 /* Hero Section End */
+
+/* New Collection Section */
+.new-collection {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+/* New Collection Section End */
+
+/* Shop Section */
+.shop-categories {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.shop-categories-item {
+  background-color: var(--darker-gray);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.shop-categories-item:first-child {
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* Shop Section End */
+.shop-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.shop-section .bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 60px;
+}
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.shop-card .shop-image img {
+  width: 280px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.shop-category-name {
+  font-size: 16px;
+  font-weight: 600;
+}

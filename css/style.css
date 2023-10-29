@@ -139,6 +139,7 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 button {
@@ -176,6 +177,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: relative;
 }
 
 .navbar-brand {
@@ -190,6 +192,9 @@ button {
   flex-direction: row;
   gap: 40px;
   align-self: flex-end;
+}
+.navbar-items .navbar-nav-mobile {
+  display: none;
 }
 
 .navbar-nav {
@@ -228,6 +233,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#hamburger {
+  display: none;
 }
 
 /* Header End */
@@ -272,11 +280,15 @@ button {
 .new-collection {
   display: flex;
   align-items: center;
+  padding: 20px;
   gap: 70px;
 }
 /* New Collection Section End */
 
 /* Shop Section */
+.shop-section {
+  padding: 20px;
+}
 .shop-categories {
   display: flex;
   justify-content: start;
@@ -284,6 +296,7 @@ button {
   gap: 20px;
   font-size: 16px;
   font-weight: 600;
+  flex-wrap: wrap;
 }
 .shop-categories-item {
   background-color: var(--darker-gray);
@@ -333,6 +346,7 @@ button {
   justify-content: start;
   align-items: center;
   position: relative;
+  padding: 20px;
 }
 
 .experience .left {
@@ -364,6 +378,7 @@ button {
   gap: 70px;
   margin-top: 75px;
   background-color: var(--darker-gray);
+  padding: 20px;
 }
 .banner .left {
   margin-left: 15%;
@@ -464,23 +479,26 @@ button {
   align-items: center;
   gap: 70px;
   position: relative;
+  padding: 20px;
 }
 
 .new-product img {
   width: 44%;
 }
+
+.new-product .left {
+  position: relative;
+}
 .new-product .left .strips .strip {
   content: "";
   position: absolute;
   top: 60px;
-  height: 80%;
+  height: 90%;
   width: 20px;
   background-color: var(--primary);
   transform: rotate(145deg);
   z-index: -1;
   border-radius: 5px;
-  /* border-top-right-radius: 5px;
-  border-top-left-radius: 5px; */
 }
 
 .new-product .left .strips .angle1 {
@@ -502,6 +520,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 20px;
 }
 .projects .top-section {
   display: flex;
@@ -560,7 +579,7 @@ button {
 /* Footer */
 footer {
   padding: 20px 20px;
-  margin: 75px;
+  margin-top: 75px;
   position: relative;
   display: flex;
   justify-content: space-between;

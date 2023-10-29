@@ -158,6 +158,16 @@ button {
   border-radius: 50%;
 }
 
+.call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 /* utility classes end*/
 
 /* Header */
@@ -331,8 +341,9 @@ button {
 
 .experience .left > img {
   position: absolute;
-  top: -117px;
-  left: -17%;
+  top: 9px;
+  left: 7%;
+  width: 44%;
 }
 
 .experience .background {
@@ -383,7 +394,7 @@ button {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(12, 300px);
+  grid-template-rows: repeat(2, 300px);
   margin: 0 auto;
   max-width: 90%;
   padding: 3rem 0;
@@ -445,3 +456,103 @@ button {
 }
 
 /* Gallery Section End */
+
+/* New Product */
+.new-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+}
+
+.new-product img {
+  width: 44%;
+}
+.new-product .left .strips .strip {
+  content: "";
+  position: absolute;
+  top: 60px;
+  height: 80%;
+  width: 20px;
+  background-color: var(--primary);
+  transform: rotate(145deg);
+  z-index: -1;
+  border-radius: 5px;
+  /* border-top-right-radius: 5px;
+  border-top-left-radius: 5px; */
+}
+
+.new-product .left .strips .angle1 {
+  left: calc(0px + 3%);
+}
+.new-product .left .strips .angle2 {
+  left: calc(80px + 3%);
+}
+.new-product .left .strips .angle3 {
+  left: calc(160px + 3%);
+}
+.new-product .left .strips .angle4 {
+  left: calc(240px + 3%);
+}
+
+/* New Product End */
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.projects .top-section {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  padding: 30px 0;
+}
+.project-card::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  top: 0;
+  background-color: var(--gray);
+}
+.project-count {
+  font-size: 24px;
+  font-weight: 600;
+}
+.project-card .project-short-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+.project-short-content h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.project-short-content p {
+  height: 3em;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+.project-card .project-image img {
+  width: 400px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.project-card .project-call-to-action .outline {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  filter: brightness(0.75);
+}
+/* Projects End */

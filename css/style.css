@@ -556,3 +556,26 @@ button {
   filter: brightness(0.75);
 }
 /* Projects End */
+
+/* Footer */
+footer {
+  padding: 20px 20px;
+  margin: 75px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  top: 0;
+  background-color: var(--light-gray);
+}
+footer h4 {
+  font-weight: 600;
+}
+/* Footer End */
